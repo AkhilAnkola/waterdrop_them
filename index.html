@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Water Drop</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<div class="drop_container">
+			<div class="drop_particle"></div>
+			<div class="drop_particle"></div>
+			<div class="drop_particle"></div>
+			<div class="drop_particle"></div>
+			<div class="drop_particle"></div>
+			<div class="drop_particle"></div>
+			<div class="drop_border"></div>
+			<div class="drop_border"></div>
+			<br><br><br><br><br><br><br><h1>Hii, My name is Akhil, I design this water drop them by using <b>gooey js</b>, I an Student of SVIT, Vasad collage. i design and develop website</h1>
+			<br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br>
+			<br><br><br><br>
+		</div>
+	</div>
+	<svg>
+		<defs>
+			<filter id="goo">
+				<feGaussianBlur in="SourceGraphic"
+				stdDeviation="10"/>
+				<feColorMatrix in="name" mode="matrix"
+					values="1 0 0 0 0
+							0 1 0 0 0
+							0 0 1 0 0
+							0 0 0 30 -10" />
+				<feBlend in="SourceGraphic" />
+			</filter>
+		</defs>
+	</svg>
+</body>
+</html>

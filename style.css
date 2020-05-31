@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    /*background-color: violet;
+    background-image: url(bg1.jpg);*/
+    
+}
+h1
+{
+    color: #1e00de;
+    position: relative;
+	text-align: center;
+	margin: 50px;
+}
+.drop_container
+{
+   /* width: 100%;    -> for scrolling effects
+    height: 100%;*/
+    overflow: hidden;
+    position: absolute;
+    filter: url(#goo);
+}
+.drop_particle
+{
+    width: 100px;
+    height: 100px;
+    top: -20%;
+    background-color: #fd8585;
+    position: absolute;
+    border-radius: 50%;
+    animation: fall 15s infinite;
+}
+@keyframes fall
+{
+    0%{top: -20%;}
+    20%{top: 0%;}
+    80%{top: 85%;}
+    100%{top: 100%;}
+}
+.drop_particle:nth-last-of-type(2n){
+    width: 60px;
+    height: 60px;
+}
+.drop_particle:nth-last-of-type(3n){
+    width: 120px;
+    height: 120px;
+}
+.drop_particle:nth-last-of-type(1){
+    left: 30%;
+    animation-delay: 1s;
+}
+.drop_particle:nth-last-of-type(2){
+    left: 60%;
+    animation-delay: 2s;
+}
+.drop_particle:nth-last-of-type(3){
+    left: 25%;
+    animation-delay: 3s;
+}
+.drop_particle:nth-last-of-type(4){
+    left: 25%;
+    animation-delay: 4s;
+}
+.drop_particle:nth-last-of-type(5){
+    left: 35%;
+    animation-delay: 5s;
+}
+.drop_particle:nth-last-of-type(6){
+    left: 50%;
+    animation-delay: 6s;
+}
+
+.drop_border
+{
+    position: absolute;
+    background-color: #fd8585;
+    width: 100%; height: 10%;
+}
+.drop_border:nth-last-of-type(1){
+    top: 0; left: 0;
+}
